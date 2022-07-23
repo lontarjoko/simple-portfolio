@@ -70,7 +70,6 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-console.log(sections);
 const scrollActive = () => {
   const scrollY = window.pageYOffset
 
@@ -122,4 +121,16 @@ themeButton.addEventListener('click', () => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
 
+sr.reveal(`.home__data`)
+sr.reveal(`.home__handle`, { delay: 700 })
+sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
+sr.reveal(`.about__img`, { delay: 900, origin: 'left' })
+sr.reveal(`.about__data`, { delay: 300, origin: 'right' })

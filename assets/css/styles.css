@@ -13,6 +13,7 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
         Orange Peel: hsl(36, 100%, 50%)
+        Coral: hsl(14, 100%, 64%)
   */
   --first-hue: 207;
   --sat: 90%;
@@ -332,6 +333,7 @@ body.light-theme {
 .home__img {
   position: absolute;
   width: 240px;
+  max-width: unset;
 }
 
 .home__handle {
@@ -345,7 +347,7 @@ body.light-theme {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  overflow: hidden;
+  overflow: initial;
 }
 
 .home__buttons {
@@ -437,7 +439,7 @@ body.light-theme {
 }
 
 .about__img {
-  width: 220px;
+  width: 320px;
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -1042,7 +1044,7 @@ body.light-theme {
 
   .home__handle {
     width: 240px;
-    height: 340px;
+    height: 320px;
   }
 
   .home__img {
@@ -1065,11 +1067,11 @@ body.light-theme {
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 4rem;
+    column-gap: 2rem;
   }
 
   .about__img {
-    width: 350px;
+    width: 420px;
   }
 
   .about__data {
