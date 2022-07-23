@@ -132,5 +132,8 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, { delay: 700 })
 sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
-sr.reveal(`.about__img`, { delay: 900, origin: 'left' })
-sr.reveal(`.about__data`, { delay: 300, origin: 'right' })
+sr.reveal('.about__img', {
+  distance: '0px',
+  opacity: 0
+});
+sr.reveal(`.about__data`, { delay: 200, origin: 'right' })
