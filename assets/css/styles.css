@@ -236,6 +236,7 @@ body.light-theme {
   top: 0;
   left: 0;
   width: 100%;
+	padding: 1rem 0;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: .4s;
@@ -255,7 +256,7 @@ body.light-theme {
 }
 
 .nav__logo-svg {
-  width: 72px;
+  width: 110px;
   height: auto;
   padding-top: .75rem;
 }
@@ -303,12 +304,20 @@ body.light-theme {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
 
+.scroll-header .nav__logo-svg {
+	width: 85px;
+	transition: .4s;
+}
+.scroll-header.header {
+	padding: .2rem 0 .3rem;
+	transition: .4s;
+}
 
 /*=============== HOME ===============*/
 .home__container {
   position: relative;
-  row-gap: 7rem;
-  padding-top: 2rem;
+  row-gap: 10rem;
+  padding-top: 3rem;
 }
 
 .home__data {
